@@ -21,7 +21,7 @@ export default {
 
     const stopLoss = /** 止损位 */ computed(() => {
       const { current, stopLossPercentage } = form.value;
-      return ((current * (100 - stopLossPercentage)) / 100).toFixed(2);
+      return (current * ((100 - stopLossPercentage) / 100)).toFixed(5);
     })
 
     const amount = /** 买入金额 */ computed(() => {
