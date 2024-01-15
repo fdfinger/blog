@@ -60,14 +60,17 @@ export default {
         </v-sheet>
       </v-col>
       <v-col md="6" cols="12">
-        <v-sheet height="100" class="mx-auto bg-surface-variant pa-2">
-          风险值: {{ risk }}
+        <v-sheet height="100" class="mx-auto bg-red pa-2 text-center">
+          <p>风险值</p>
+          <p class="text-h3">{{ risk }}</p>
+          </v-sheet>
+        <v-sheet height="100" class="mx-auto bg-orange-darken-1 pa-2 text-center">
+          <p>止损位</p>
+          <p class="text-h3">{{ stopLoss }}</p>
         </v-sheet>
-        <v-sheet height="100" class="mx-auto bg-warning pa-2">
-          止损位: {{ stopLoss }}
-        </v-sheet>
-        <v-sheet height="100" class="mx-auto bg-success pa-2">
-          买入金额: {{ amount }}
+        <v-sheet height="100" class="mx-auto bg-green-darken-1 pa-2 text-center">
+          <p>买入金额</p>
+          <p class="text-h3">{{ amount }}</p>
         </v-sheet>
       </v-col>
     </v-row>
