@@ -14,12 +14,12 @@ export default {
       risk: 0, // 风险
     });
 
-    const risk = computed(() => {
+    const risk = /** 风险值 */ computed(() => {
       const { current, amount, stopLossPercentage } = form.value;
       return (((amount / current) * stopLossPercentage) / 100).toFixed(2);
     })
 
-    const stopLoss = computed(() => {
+    const stopLoss = /** 止损位 */ computed(() => {
       const { current, stopLossPercentage } = form.value;
       return ((current * (100 - stopLossPercentage)) / 100).toFixed(2);
     })
@@ -29,7 +29,7 @@ export default {
       return current * amount;
     })
 
-    return { form, risk, stopLoss };
+    return { form, risk, stopLoss, amount  };
   },
   template: `
   <v-container>
