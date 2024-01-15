@@ -14,9 +14,9 @@ export default {
       risk: 0, // 风险
     });
 
-    const risk = /** 风险值 */ computed(() => {
-      const { current, amount, stopLossPercentage } = form.value;
-      return (((amount / current) * stopLossPercentage) / 100).toFixed(2);
+    const risk = /** 风险值 买入金额 * 止损百分比 */ computed(() => {
+      const { stopLossPercentage } = form.value;
+      return ((amount.value * stopLossPercentage) / 100).toFixed(2);
     })
 
     const stopLoss = /** 止损位 */ computed(() => {

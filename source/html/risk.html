@@ -10,7 +10,7 @@
       href="https://cdn.bootcdn.net/ajax/libs/vuetify/3.3.15/vuetify.css"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.css" rel="stylesheet">
   </head>
   <body>
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.3.4/vue.global.js"></script>
@@ -25,18 +25,6 @@
     <script type="module">
       import Layout from '/js/components/layout.js'
       import RiskValue from '/js/components/risk/risk-value.js'
-      const testManage = () => {
-        const value = Vue.ref("你好，世界"); // 相当于data
-        const click = () => {
-          // 相当于 methods 里面的事件
-          value.value = "好的，收到！" + new Date();
-        };
-
-        return {
-          value,
-          click,
-        };
-      };
 
       const vue3Composition = {
         components: {
@@ -44,11 +32,11 @@
           RiskValue: RiskValue
         },
         setup() {
-          // 传说中的setup
-          // 使用上面的定义的“类”，分散setup内部的代码
-          const { value, click } = testManage();
+          const value = Vue.ref("你好，世界"); // 相当于data
+          const click = () => {
+            value.value = "好的，收到！" + new Date();
+          };
           return {
-            // 返回给模板，否则模板访问不到。这里返回的是对象。
             value,
             click,
           };
