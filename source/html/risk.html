@@ -18,17 +18,19 @@
 
     <div id="app">
       <Layout title="风险计算">
-        <risk-value />
+        <risk-container />
       </Layout>
     </div>
 
     <script type="module">
       import Layout from '/js/components/layout.js'
       import RiskValue from '/js/components/risk/risk-value.js'
+      import RiskContainer from '/js/components/risk/risk-container.js'
 
       const vue3Composition = {
         components: {
           Layout: Layout,
+          RiskContainer,
           RiskValue: RiskValue
         },
         setup() {

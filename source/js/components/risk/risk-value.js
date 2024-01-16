@@ -1,5 +1,5 @@
 /**
- * @file 求风险值
+ * @file 求风险值和买入总金额
  */
 
 const { createApp, ref, reactive, computed, nextTick, onMounted, onUpdated, onBeforeUnmount, toRefs } = Vue;
