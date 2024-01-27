@@ -22,3 +22,14 @@ Android Studio -> Help -> Check fo Updates
 
 * [官方](https://developer.android.google.cn/studio?hl=zh-cn)
 * [androiddevtools](https://www.androiddevtools.cn/#)
+
+# 5. 国内代理设置和地址
+
+在 `setting` 中搜索 `proxy`
+
+`auto` 项 填写代理地址
+
+```
+#阿里云代理 https://mirrors.aliyun.com/android.googlesource.com/
+#腾讯云代理 https://mirrors.cloud.tencent.com/AndroidSDK/
+```
