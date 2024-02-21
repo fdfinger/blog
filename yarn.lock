@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@prisma/client@^5.8.0":
-  version "5.8.0"
-  resolved "https://registry.npmmirror.com/@prisma/client/-/client-5.8.0.tgz#5f4c8c1c7cb60b1f4d39082bb214d048ffeb3730"
-  integrity sha512-QxO6C4MaA/ysTIbC+EcAH1aX/YkpymhXtO6zPdk+FvA7+59tNibIYpd+7koPdViLg2iKES4ojsxWNUGNJaEcbA==
+"@prisma/client@^5.10.1":
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.10.1.tgz#8768a4f9de1249bfff959dc33a9e4c0eb7708325"
+  integrity sha512-4R8Vp6sSwVJSnOxw8WU1WSLqE/G3WJy1xA05XvW87cINoB1hEY7endw5Ppy6TrIBCCtHQim2lqfHkbPvv+i7bQ==
 
 "@prisma/debug@5.8.0":
   version "5.8.0"
