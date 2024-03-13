@@ -25,6 +25,6 @@
     "hexo-theme-landscape": "^1.0.0"
   },
   "devDependencies": {
-    "prisma": "^5.8.0"
+    "prisma": "^5.11.0"
   }
 }
